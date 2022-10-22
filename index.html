@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <div id="saveIOForms">
+      <form class="saveForm" name="saveInputForm" id="saveInputForm">
+        <label for="saveInputField">Input</label>
+        <textarea id="saveInputField"></textarea>
+        <div id="saveInputFormErrorField" class="formErrorMessage"></div>
+      </form>
+      <form class="saveForm" name="saveOutputForm" id="saveOutputForm">
+        <label for="saveOutputField">Output</label>
+        <textarea id="saveOutputField" readonly></textarea>
+        <button id="copyOutputButton">Copy Text</button>
+      </form>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "melvor-idle-save-edit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "@babel/core": "7.2.0",
+    "moment": "2.29.4",
+    "pako": "2.0.4",
+    "parcel-bundler": "^1.6.1",
+    "typescript": "4.8.4"
+  },
+  "devDependencies": {},
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
+  "keywords": []
+}

@@ -1,0 +1,52 @@
+@use "sass:selector";
+
+body {
+  font-family: sans-serif;
+}
+
+@mixin formInputDefaultStyle {
+  background-color: rgb(247, 247, 247);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  @at-root #{selector.replace(&, "form", "form.error")} {
+    background-color: rgb(255, 240, 240);
+    border-color: #d44;
+  }
+}
+
+#saveIOForms {
+  display: flex;
+  flex-direction: column;
+  form.saveForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    
+    label {
+      padding: 12px;
+      font-size: 20px;
+    }
+    
+    textarea {
+      @include formInputDefaultStyle;
+      width: 85%;
+      min-height: 150px;
+      padding: 12px 20px;
+      resize: vertical;
+      margin-bottom: 12px;
+    }
+    button {
+      @include formInputDefaultStyle;
+      padding: 16px 32px;
+    }
+
+    .formErrorMessage {
+      color: #d44;
+    }
+  }
+}
+
+
+
